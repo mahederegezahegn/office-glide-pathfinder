@@ -14,6 +14,11 @@ export interface Location {
   floor: number;
   position: Position;
   description?: string;
+  dimensions?: {
+    width: number;
+    height: number;
+    depth: number;
+  };
 }
 
 export interface PathNode {
