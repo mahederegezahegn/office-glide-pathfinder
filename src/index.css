@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -97,5 +98,17 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@layer utilities {
+  .animate-dash {
+    animation: dash 1.5s linear infinite;
   }
 }
